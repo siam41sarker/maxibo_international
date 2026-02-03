@@ -1,0 +1,116 @@
+{
+  "partners": [
+    {
+      "id": "gemini",
+      "name": "Gemini CAD Systems",
+      "shortName": "Gemini CAD",
+      "country": "Romania (Lectra Family)",
+      "logo": "gemini.png",
+      "description": "Gemini CAD Systems, now part of the Lectra family since 2021, specializes in advanced software, hardware, and workflow solutions for industries such as apparel, furniture, and automotive.",
+      "highlights": [
+        "18,000+ installations in 60 countries",
+        "Industry 4.0 principles and automation",
+        "Complete manufacturing workflow solutions",
+        "Continuous innovation and technical support"
+      ]
+    },
+    {
+      "id": "tkt",
+      "name": "TKT Brain Power",
+      "shortName": "TKT Brain Power",
+      "country": "Spain",
+      "logo": "tkt.png",
+      "description": "TKT Brain Power is a beacon of determination and innovation in the industry. With an unwavering commitment to quality as non-negotiable, the company delivers high-value solutions swiftly and competitively.",
+      "highlights": [
+        "High-quality garment plotters",
+        "Efficiency and innovation focus",
+        "Cost-effective solutions",
+        "Customer satisfaction priority"
+      ]
+    },
+    {
+      "id": "sinajet",
+      "name": "Sinajet",
+      "shortName": "Sinajet",
+      "country": "China",
+      "logo": "sinajet.png",
+      "description": "Founded in 2006, Sinajet manufactures advanced digital cutting systems for industries such as apparel, advertising, packaging, aviation, wind energy, automobiles, electronics, shoemaking, upholstered furniture, home furnishing, and leather goods.",
+      "highlights": [
+        "Big data, IoT, and cloud computing integration",
+        "Compatible with existing MES, APS, and WMS",
+        "Large-batch custom manufacturing",
+        "Extensive in-house R&D capabilities"
+      ]
+    },
+    {
+      "id": "konsan",
+      "name": "Konsan Tech",
+      "shortName": "Konsan Tech",
+      "country": "Turkey",
+      "logo": "konsan.png",
+      "description": "Since 1985, Konsan.tech has been providing innovative automation solutions to the fashion and apparel, furniture, automotive, aerospace, technical textiles, and insulation sectors worldwide.",
+      "highlights": [
+        "Broadest product range in the field",
+        "Spreading machine manufacturing",
+        "Fusing press solutions",
+        "Fabric inspection machines"
+      ]
+    },
+    {
+      "id": "gbos",
+      "name": "GBOS",
+      "shortName": "GBOS",
+      "country": "China",
+      "logo": "gbos.png",
+      "description": "GBOS, China provides smart equipment solutions globally, operating in a 40,000 square meter production area. Specializing in medium and high-end laser and oscillating knife solutions.",
+      "highlights": [
+        "150+ intelligent products launched",
+        "140+ patents and software copyrights",
+        "ISO9001:2005 certified",
+        "IoT Bridge for digital transformation"
+      ]
+    },
+    {
+      "id": "jindex",
+      "name": "Jindex",
+      "shortName": "Jindex",
+      "country": "China",
+      "logo": "jindex.png",
+      "description": "Jindex UPC Inkjet Cutter represents a pinnacle of technological innovation with world-first features including double front feed system and simultaneous multi-machine display.",
+      "highlights": [
+        "World's first double front feed system",
+        "Simultaneous multi-machine display",
+        "Precise cutting of 300g Kraft paper",
+        "One-click online setup"
+      ]
+    },
+    {
+      "id": "dopsing",
+      "name": "Dopsing",
+      "shortName": "Dopsing",
+      "country": "China",
+      "logo": "dopsing.jpg",
+      "description": "Dongguan City Dopsing Machinery Technology CO., Ltd., a subsidiary of KINWAH Group, is a leading Chinese manufacturer of advanced textile equipment with over 20 years of R&D experience.",
+      "highlights": [
+        "50,000 sqm industrial park",
+        "60 R&D experts",
+        "Nearly 100 patents",
+        "Served 100+ countries"
+      ]
+    },
+    {
+      "id": "huatang",
+      "name": "Huatang",
+      "shortName": "Huatang",
+      "country": "China",
+      "logo": "huatang.png",
+      "description": "Tianjin Huatang Sewing Machine Manufacturing Co., Ltd. specializes in high-tech multi-needle double chain stitch and ultra high-speed/safety stitch overlock sewing machines.",
+      "highlights": [
+        "ISO9001 standards certified",
+        "CE-certified products",
+        "20+ years of experience",
+        "Comprehensive after-sales support"
+      ]
+    }
+  ]
+}

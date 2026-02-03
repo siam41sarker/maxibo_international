@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "icon": "Target",
+      "title": "Customer Focus",
+      "description": "We prioritize customer satisfaction and work closely to understand their unique needs."
+    },
+    {
+      "icon": "Lightbulb",
+      "title": "Innovation",
+      "description": "Constantly seeking new technologies to help our clients stay ahead of the competition."
+    },
+    {
+      "icon": "Award",
+      "title": "Quality",
+      "description": "We partner only with manufacturers who meet the highest international quality standards."
+    },
+    {
+      "icon": "Users",
+      "title": "Partnership",
+      "description": "Building long-term relationships with both our clients and technology partners."
+    }
+  ],
+  "timeline": [
+    {
+      "year": "Founded",
+      "title": "Company Established",
+      "description": "Maxibo International was founded with a vision to transform the apparel industry in Bangladesh."
+    },
+    {
+      "year": "Growth",
+      "title": "Strategic Partnerships",
+      "description": "Established partnerships with leading global manufacturers including Gemini CAD, Sinajet, and Konsan."
+    },
+    {
+      "year": "Expansion",
+      "title": "Market Leadership",
+      "description": "Expanded our product portfolio to cover all aspects of apparel manufacturing automation."
+    },
+    {
+      "year": "Today",
+      "title": "Industry 4.0",
+      "description": "Leading the digital transformation of the apparel industry with smart manufacturing solutions."
+    }
+  ],
+  "features": [
+    {
+      "icon": "Settings",
+      "title": "Advanced Technology",
+      "description": "We provide cutting-edge automation solutions that optimize production efficiency."
+    },
+    {
+      "icon": "Cpu",
+      "title": "Industry 4.0 Ready",
+      "description": "Our solutions integrate IoT, big data, and cloud computing for smart manufacturing."
+    },
+    {
+      "icon": "Award",
+      "title": "Global Partners",
+      "description": "We partner with world-renowned manufacturers from Europe, China, and Turkey."
+    },
+    {
+      "icon": "Users",
+      "title": "Expert Support",
+      "description": "Professional team of skilled technicians providing comprehensive after-sales service."
+    }
+  ]
+}

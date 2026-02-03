@@ -1,0 +1,390 @@
+{
+  "services": [
+    {
+      "id": "installation",
+      "icon": "Wrench",
+      "title": "Installation & Setup",
+      "description": "Professional installation and configuration of all industrial equipment. Our expert technicians ensure seamless integration into your production line.",
+      "features": [
+        "On-site installation by certified technicians",
+        "Equipment calibration and testing",
+        "Integration with existing systems",
+        "Safety compliance verification"
+      ],
+      "href": "/services/installation"
+    },
+    {
+      "id": "training",
+      "icon": "GraduationCap",
+      "title": "Training & Education",
+      "description": "Comprehensive training programs to ensure your team can operate equipment efficiently and maximize productivity.",
+      "features": [
+        "Operator training programs",
+        "Maintenance staff training",
+        "Software and CAD training",
+        "Certification programs"
+      ],
+      "href": "/services/training"
+    },
+    {
+      "id": "maintenance",
+      "icon": "Settings",
+      "title": "Maintenance & Repairs",
+      "description": "Keep your equipment running at peak performance with our preventive maintenance and rapid repair services.",
+      "features": [
+        "Preventive maintenance contracts",
+        "Emergency repair services",
+        "Genuine spare parts supply",
+        "Remote diagnostics support"
+      ],
+      "href": "/services/maintenance"
+    },
+    {
+      "id": "consultancy",
+      "icon": "MessageSquare",
+      "title": "Consultancy Services",
+      "description": "Expert guidance to optimize your manufacturing processes and make informed technology investment decisions.",
+      "features": [
+        "Production line assessment",
+        "Technology roadmap planning",
+        "ROI analysis and feasibility studies",
+        "Industry 4.0 transformation"
+      ],
+      "href": "/services/consultancy"
+    }
+  ],
+  "installation": {
+    "steps": [
+      {
+        "step": "01",
+        "title": "Site Assessment",
+        "description": "Our engineers evaluate your facility to plan optimal equipment placement and integration."
+      },
+      {
+        "step": "02",
+        "title": "Preparation",
+        "description": "We coordinate logistics, prepare the installation site, and ensure all prerequisites are met."
+      },
+      {
+        "step": "03",
+        "title": "Installation",
+        "description": "Expert technicians install and configure your equipment according to manufacturer specifications."
+      },
+      {
+        "step": "04",
+        "title": "Testing & Handover",
+        "description": "Comprehensive testing, operator training, and documentation before final handover."
+      }
+    ],
+    "features": [
+      {
+        "icon": "Clock",
+        "title": "Timely Delivery",
+        "description": "We complete installations within agreed timelines to minimize production downtime."
+      },
+      {
+        "icon": "Shield",
+        "title": "Safety First",
+        "description": "All installations comply with international safety standards and local regulations."
+      },
+      {
+        "icon": "Cog",
+        "title": "System Integration",
+        "description": "Seamless integration with your existing production systems and workflows."
+      },
+      {
+        "icon": "Users",
+        "title": "Certified Team",
+        "description": "Factory-trained technicians with certifications from all partner manufacturers."
+      }
+    ],
+    "equipmentTypes": [
+      "Automatic Cutting Systems",
+      "Fabric Spreading Machines",
+      "Fusing Presses",
+      "CAD Plotters & Digitizers",
+      "Sewing Machine Lines",
+      "Inspection Equipment",
+      "Printing & Dyeing Machines",
+      "Automation Systems"
+    ],
+    "certifications": [
+      "Gemini CAD Certified",
+      "Sinajet Authorized",
+      "Konsan Tech Trained",
+      "GBOS Certified"
+    ]
+  },
+  "training": {
+    "programs": [
+      {
+        "title": "Operator Training",
+        "duration": "3-5 Days",
+        "description": "Comprehensive hands-on training for machine operators to ensure efficient and safe equipment operation.",
+        "topics": [
+          "Equipment operation fundamentals",
+          "Safety protocols and procedures",
+          "Daily maintenance routines",
+          "Troubleshooting common issues",
+          "Productivity optimization tips"
+        ]
+      },
+      {
+        "title": "Maintenance Staff Training",
+        "duration": "5-7 Days",
+        "description": "In-depth technical training for maintenance personnel to handle routine maintenance and repairs.",
+        "topics": [
+          "Preventive maintenance procedures",
+          "Diagnostic techniques",
+          "Component replacement",
+          "Calibration and adjustments",
+          "Spare parts management"
+        ]
+      },
+      {
+        "title": "CAD/CAM Software Training",
+        "duration": "3-5 Days",
+        "description": "Complete software training for pattern making, grading, marker making, and production planning.",
+        "topics": [
+          "Pattern digitizing and creation",
+          "Grading and sizing rules",
+          "Marker making optimization",
+          "Nesting efficiency techniques",
+          "Data management and backup"
+        ]
+      },
+      {
+        "title": "Management Training",
+        "duration": "2-3 Days",
+        "description": "Strategic training for managers on production planning, KPIs, and technology utilization.",
+        "topics": [
+          "Production planning with CAD",
+          "Performance monitoring",
+          "Cost optimization strategies",
+          "Quality control integration",
+          "ROI maximization"
+        ]
+      }
+    ],
+    "features": [
+      {
+        "icon": "Users",
+        "title": "Expert Trainers",
+        "description": "Training delivered by experienced professionals with deep industry knowledge."
+      },
+      {
+        "icon": "Monitor",
+        "title": "Hands-On Learning",
+        "description": "Practical, hands-on training on actual equipment and software."
+      },
+      {
+        "icon": "BookOpen",
+        "title": "Training Materials",
+        "description": "Comprehensive manuals and reference materials in local language."
+      },
+      {
+        "icon": "Award",
+        "title": "Certification",
+        "description": "Official certificates issued upon successful completion of training."
+      }
+    ],
+    "options": [
+      {
+        "icon": "Users",
+        "title": "On-Site Training",
+        "description": "Training delivered at your facility using your actual equipment for maximum relevance."
+      },
+      {
+        "icon": "Monitor",
+        "title": "Virtual Training",
+        "description": "Remote training sessions for software and theory-based learning."
+      },
+      {
+        "icon": "Award",
+        "title": "Partner Facility",
+        "description": "Advanced training at manufacturer facilities for specialized certifications."
+      }
+    ]
+  },
+  "maintenance": {
+    "services": [
+      {
+        "icon": "Calendar",
+        "title": "Preventive Maintenance",
+        "description": "Scheduled maintenance to prevent breakdowns and extend equipment life.",
+        "features": [
+          "Regular inspection schedules",
+          "Component replacement before failure",
+          "Performance optimization",
+          "Detailed maintenance reports"
+        ]
+      },
+      {
+        "icon": "AlertTriangle",
+        "title": "Emergency Repairs",
+        "description": "Rapid response to minimize production downtime during unexpected failures.",
+        "features": [
+          "24/7 emergency hotline",
+          "Rapid technician dispatch",
+          "Priority parts sourcing",
+          "Temporary solutions when needed"
+        ]
+      },
+      {
+        "icon": "Package",
+        "title": "Spare Parts Supply",
+        "description": "Genuine spare parts from original manufacturers with warranty.",
+        "features": [
+          "Genuine OEM parts",
+          "Local parts inventory",
+          "Express delivery options",
+          "Competitive pricing"
+        ]
+      },
+      {
+        "icon": "Headphones",
+        "title": "Remote Support",
+        "description": "Remote diagnostics and guidance to resolve issues quickly.",
+        "features": [
+          "Remote diagnostics",
+          "Video call support",
+          "Software troubleshooting",
+          "Operator guidance"
+        ]
+      }
+    ],
+    "plans": [
+      {
+        "name": "Basic",
+        "description": "Essential maintenance coverage",
+        "features": [
+          "Quarterly preventive maintenance",
+          "Remote technical support",
+          "10% discount on spare parts",
+          "Annual performance report"
+        ],
+        "recommended": false
+      },
+      {
+        "name": "Standard",
+        "description": "Comprehensive maintenance package",
+        "features": [
+          "Bi-monthly preventive maintenance",
+          "Priority remote & on-site support",
+          "15% discount on spare parts",
+          "Emergency response within 48 hours",
+          "Quarterly performance reports"
+        ],
+        "recommended": true
+      },
+      {
+        "name": "Premium",
+        "description": "Complete peace of mind",
+        "features": [
+          "Monthly preventive maintenance",
+          "24/7 priority support",
+          "20% discount on spare parts",
+          "Emergency response within 24 hours",
+          "Monthly performance reports",
+          "Dedicated account manager"
+        ],
+        "recommended": false
+      }
+    ]
+  },
+  "consultancy": {
+    "services": [
+      {
+        "icon": "Factory",
+        "title": "Production Line Assessment",
+        "description": "Comprehensive evaluation of your current production processes to identify improvement opportunities.",
+        "deliverables": [
+          "Detailed efficiency analysis",
+          "Bottleneck identification",
+          "Capacity utilization report",
+          "Improvement recommendations"
+        ]
+      },
+      {
+        "icon": "Target",
+        "title": "Technology Planning",
+        "description": "Strategic roadmap for technology adoption aligned with your business goals and growth plans.",
+        "deliverables": [
+          "Technology needs assessment",
+          "Investment priority matrix",
+          "Implementation timeline",
+          "Budget planning support"
+        ]
+      },
+      {
+        "icon": "BarChart3",
+        "title": "ROI Analysis",
+        "description": "Data-driven analysis to evaluate equipment investments and make informed decisions.",
+        "deliverables": [
+          "Cost-benefit analysis",
+          "Payback period calculation",
+          "Total cost of ownership",
+          "Comparative analysis"
+        ]
+      },
+      {
+        "icon": "Cpu",
+        "title": "Industry 4.0 Transformation",
+        "description": "Guide your digital transformation journey with smart manufacturing solutions.",
+        "deliverables": [
+          "Digital readiness assessment",
+          "IoT integration strategy",
+          "Data analytics implementation",
+          "Automation roadmap"
+        ]
+      }
+    ],
+    "processSteps": [
+      {
+        "step": "01",
+        "title": "Discovery",
+        "description": "We understand your business, challenges, and objectives through detailed discussions."
+      },
+      {
+        "step": "02",
+        "title": "Analysis",
+        "description": "Our experts analyze your current state and identify improvement opportunities."
+      },
+      {
+        "step": "03",
+        "title": "Strategy",
+        "description": "We develop a customized strategy and action plan aligned with your goals."
+      },
+      {
+        "step": "04",
+        "title": "Implementation Support",
+        "description": "We support you through implementation and measure the results."
+      }
+    ],
+    "industries": [
+      "Apparel Manufacturing",
+      "Textile Production",
+      "Footwear Industry",
+      "Leather Goods",
+      "Home Furnishing",
+      "Technical Textiles"
+    ],
+    "benefits": [
+      {
+        "icon": "Lightbulb",
+        "title": "Industry Expertise",
+        "description": "Decades of experience in the apparel and textile industry."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Proven Results",
+        "description": "Track record of helping clients achieve measurable improvements."
+      },
+      {
+        "icon": "Target",
+        "title": "Custom Solutions",
+        "description": "Tailored recommendations based on your specific needs."
+      }
+    ]
+  }
+}

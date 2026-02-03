@@ -1,0 +1,90 @@
+{
+  "company": {
+    "name": "Maxibo International",
+    "shortName": "Maxibo",
+    "tagline": "Impel You to Next",
+    "description": "Maxibo International delivers cutting-edge technology, automation solutions, and expert consultancy to elevate your manufacturing success.",
+    "about": "A growing company in Bangladesh, dedicated to delivering optimal solutions for the apparel industry with globally renowned products and expert consultancy.",
+    "overview": "MAXIBO International boasts a professional team of skilled and experienced technicians dedicated to delivering optimal solutions for the apparel industry. Our primary goal is to elevate industry satisfaction and success by offering globally renowned products, services, and expert consultancy.",
+    "overviewExtended": "We firmly believe in the boundless potential of technology and strive to encourage our clients to adopt forward-thinking strategies to achieve their goals. Utilizing our advanced technologies, solutions, and services, we empower our clients to progress and meet their targets efficiently.",
+    "mission": "To find new technologies for the apparel industry, enabling our customers to optimize their production facilities and adopt forward-thinking strategies to achieve their goals.",
+    "missionPoints": [
+      "Advanced technologies and solutions",
+      "Expert consultancy and support",
+      "Industry 4.0 integration",
+      "Continuous innovation"
+    ],
+    "missionShortPoints": [
+      "Discover innovative technologies",
+      "Optimize production facilities",
+      "Enable forward-thinking strategies",
+      "Deliver expert consultancy"
+    ],
+    "goal": "To elevate industry satisfaction and success by offering globally renowned products, services, and expert consultancy to the apparel sector in Bangladesh and beyond.",
+    "whyChooseUs": [
+      "World-renowned global manufacturers",
+      "Industry 4.0 ready solutions",
+      "Complete technical support and training",
+      "Spare parts availability",
+      "Expert installation services",
+      "Competitive pricing"
+    ],
+    "whyChooseServices": [
+      "Factory-trained technicians with global certifications",
+      "Quick response times and emergency support",
+      "Genuine spare parts from original manufacturers",
+      "Comprehensive documentation and reporting",
+      "Cost-effective service packages",
+      "Bilingual support team"
+    ]
+  },
+  "contact": {
+    "phones": ["+880 1712768821", "+880 1680329598"],
+    "emails": ["maxibobd@gmail.com", "amalek.maxibobd@gmail.com"],
+    "location": "Bangladesh",
+    "businessHours": {
+      "days": "Sunday - Thursday",
+      "time": "9:00 AM - 6:00 PM"
+    },
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.07270958957!2d90.27923710646989!3d23.780573258035905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2s!4v1706000000000!5m2!1sen!2s"
+  },
+  "team": [
+    {
+      "name": "Md. Abdul Malek Sorkar",
+      "role": "Managing Partner",
+      "phone": "+880 1712768821",
+      "email": "amalek.maxibobd@gmail.com"
+    },
+    {
+      "name": "Istiak Ahmmed",
+      "role": "CEO",
+      "phone": "+880 1680329598",
+      "email": "maxibobd@gmail.com"
+    }
+  ],
+  "social": {
+    "facebook": "#",
+    "linkedin": "#",
+    "twitter": "#"
+  },
+  "stats": {
+    "home": [
+      { "value": "18,000+", "label": "Installations Worldwide" },
+      { "value": "60+", "label": "Countries Served" },
+      { "value": "140+", "label": "Patents & Copyrights" },
+      { "value": "20+", "label": "Years Experience" }
+    ],
+    "services": [
+      { "value": "500+", "label": "Installations Completed" },
+      { "value": "1000+", "label": "Professionals Trained" },
+      { "value": "24/7", "label": "Support Available" },
+      { "value": "98%", "label": "Client Satisfaction" }
+    ],
+    "maintenance": [
+      { "value": "24/7", "label": "Support Available" },
+      { "value": "<24h", "label": "Emergency Response" },
+      { "value": "95%", "label": "First-Visit Fix Rate" },
+      { "value": "100%", "label": "Genuine Parts" }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "heroProducts": [
+    {
+      "id": "spreading",
+      "name": "Spreading Machines",
+      "description": "Automated fabric spreading for precision and efficiency",
+      "image": "spreading-machine.jpg"
+    },
+    {
+      "id": "cutting",
+      "name": "Cutting Systems",
+      "description": "High-precision laser and oscillating knife cutting",
+      "image": "cutting-machine.jpg"
+    },
+    {
+      "id": "fusing",
+      "name": "Fusing Presses",
+      "description": "Industrial heat press solutions for garment manufacturing",
+      "image": "fusing-press.jpg"
+    },
+    {
+      "id": "plotter",
+      "name": "CAD Plotters",
+      "description": "Wide format printing for patterns and markers",
+      "image": "plotter.jpg"
+    }
+  ],
+  "productCategories": [
+    {
+      "id": "cutting",
+      "name": "Cutting Systems",
+      "description": "Advanced digital cutting solutions for precision fabric and material cutting",
+      "image": "cutting-machine.jpg",
+      "features": [
+        "Laser cutting technology",
+        "Oscillating knife systems",
+        "Multi-layer cutting capability",
+        "CAD/CAM integration",
+        "Automatic material handling",
+        "High-speed production"
+      ],
+      "partners": ["GBOS", "Sinajet", "Jindex"]
+    },
+    {
+      "id": "spreading",
+      "name": "Spreading Machines",
+      "description": "Automated fabric spreading systems for efficient material handling",
+      "image": "spreading-machine.jpg",
+      "features": [
+        "Automatic tension control",
+        "Edge alignment system",
+        "Multiple fabric types support",
+        "Speed optimization",
+        "Quality inspection integration",
+        "Roll unwinding capability"
+      ],
+      "partners": ["Konsan Tech"]
+    },
+    {
+      "id": "fusing",
+      "name": "Fusing Machines",
+      "description": "Industrial fusing and pressing equipment for garment manufacturing",
+      "image": "fusing-press.jpg",
+      "features": [
+        "Mega fusing press systems",
+        "Temperature precision control",
+        "Large format capability",
+        "Energy efficient operation",
+        "Digital control panels",
+        "Continuous operation mode"
+      ],
+      "partners": ["Konsan Tech"]
+    },
+    {
+      "id": "cad",
+      "name": "CAD/CAM & Plotters",
+      "description": "Software and hardware solutions for pattern design and plotting",
+      "image": "plotter.jpg",
+      "features": [
+        "Pattern digitizing software",
+        "Marker making systems",
+        "Wide format plotters",
+        "Inkjet cutting technology",
+        "Network connectivity",
+        "Multi-machine management"
+      ],
+      "partners": ["Gemini CAD", "TKT Brain Power", "Jindex"]
+    }
+  ],
+  "additionalProducts": [
+    {
+      "category": "Sewing Machines",
+      "description": "Multi-needle chain stitch and overlock machines",
+      "partner": "Huatang"
+    },
+    {
+      "category": "Printing & Dyeing",
+      "description": "Oval screen printers and fabric dyeing machines",
+      "partner": "Dopsing"
+    },
+    {
+      "category": "Fabric Inspection",
+      "description": "Plaiting and roll fabric inspection systems",
+      "partner": "Konsan Tech"
+    },
+    {
+      "category": "Automation Solutions",
+      "description": "Industry 4.0 ready manufacturing systems",
+      "partner": "Sinajet, GBOS"
+    }
+  ]
+}
