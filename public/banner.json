@@ -1,0 +1,19 @@
+{
+  "slides": [
+    {
+      "id": 1,
+      "src": "../../assets/banner.jpg",
+      "alt": "Slide 1"
+    },
+    {
+      "id": 2,
+      "src": "../../assets/banner2.jpg",
+      "alt": "Slide 2"
+    },
+    {
+      "id": 3,
+      "src": "../../assets/header2.jpg",
+      "alt": "Slide 3"
+    }
+  ]
+}

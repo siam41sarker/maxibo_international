@@ -1,7 +1,7 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import logo from '../../assets/logo.png';
+import logo from "../../assets/logo.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -9,17 +9,18 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
-  // Close mobile menus on route change
+  // Close menus when route changes
   useEffect(() => {
     setOpen(false);
     setServicesOpen(false);
   }, [location.pathname]);
 
-  // Detect scroll
+  // Scroll detection for header style (trigger immediately on scroll)
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 0); // triggers immediately when user starts scrolling
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -40,8 +41,8 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full fixed top-0 left-0 z-50 transition-colors duration-300 ${
-        scrolled ? "bg-white shadow-sm" : "bg-transparent"
+      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
+        scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
       <div className="w-full lg:w-10/12 mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8">
@@ -52,10 +53,10 @@ const Header = () => {
             <img
               src={logo}
               alt="Maxibo International Logo"
-              className="h-10 md:h-20 sm:h-12 w-auto"
+              className="h-10 md:h-16 w-auto"
             />
             <span
-              className={`md:text-xl sm:text-sm font-semibold mt-1 text-center font-outfit transition ${
+              className={`md:text-lg sm:text-sm font-semibold mt-1 text-center transition-colors duration-300 ${
                 scrolled ? "text-black" : "text-white"
               }`}
             >
@@ -63,47 +64,36 @@ const Header = () => {
             </span>
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-6 lg:gap-8 relative font-inter">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                `text-sm lg:text-base font-medium transition ${
-                  isActive
-                    ? "text-orange-500"
-                    : scrolled
-                    ? "text-gray-700 hover:text-orange-500"
-                    : "text-white hover:text-orange-300"
-                }`
-              }
-            >
-              Home
-            </NavLink>
-
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                `text-sm lg:text-base font-medium transition ${
-                  isActive
-                    ? "text-orange-500"
-                    : scrolled
-                    ? "text-gray-700 hover:text-orange-500"
-                    : "text-white hover:text-orange-300"
-                }`
-              }
-            >
-              About
-            </NavLink>
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8 relative">
+            {navLinks.slice(0, 2).map((link) => (
+              <NavLink
+                key={link.name}
+                to={link.path}
+                className={({ isActive }) =>
+                  `text-sm lg:text-base font-medium transition-colors duration-300 ${
+                    isActive
+                      ? "text-orange-500"
+                      : scrolled
+                      ? "text-gray-700 hover:text-orange-500"
+                      : "text-white hover:text-orange-300"
+                  }`
+                }
+              >
+                {link.name}
+              </NavLink>
+            ))}
 
             {/* Services Dropdown */}
             <div className="relative group">
               <button
-                className={`flex items-center gap-1 text-sm lg:text-base font-medium transition ${
+                className={`flex items-center gap-1 text-sm lg:text-base font-medium transition-colors duration-300 ${
                   scrolled ? "text-gray-700" : "text-white hover:text-orange-300"
                 }`}
               >
                 Services <ChevronDown size={16} />
               </button>
+
               <div className="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 {serviceLinks.map((item) => (
                   <Link
@@ -122,7 +112,7 @@ const Header = () => {
                 key={link.name}
                 to={link.path}
                 className={({ isActive }) =>
-                  `text-sm lg:text-base font-medium transition ${
+                  `text-sm lg:text-base font-medium transition-colors duration-300 ${
                     isActive
                       ? "text-orange-500"
                       : scrolled
@@ -136,11 +126,11 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA */}
+          {/* CTA Button */}
           <div className="hidden md:block">
             <Link
               to="/quote"
-              className={`bg-orange-500 hover:bg-orange-600 text-white text-sm lg:text-base font-semibold px-4 lg:px-5 py-2.5 rounded-lg transition shadow`}
+              className="bg-orange-500 hover:bg-orange-600 text-white text-sm lg:text-base font-semibold px-4 lg:px-5 py-2.5 rounded-lg transition shadow"
             >
               Get a Quote
             </Link>
@@ -148,8 +138,10 @@ const Header = () => {
 
           {/* Mobile Toggle */}
           <button
-            className={`md:hidden p-2 rounded-lg transition ${
-              scrolled ? "text-gray-700 hover:bg-gray-100" : "text-white hover:bg-gray-100"
+            className={`md:hidden p-2 rounded-lg transition-colors duration-300 ${
+              scrolled
+                ? "text-gray-700 hover:bg-gray-100"
+                : "text-white hover:bg-white/20"
             }`}
             onClick={() => setOpen(!open)}
           >
@@ -161,63 +153,12 @@ const Header = () => {
       {/* Mobile Menu */}
       <div className={`md:hidden bg-white shadow-md ${open ? "block" : "hidden"}`}>
         <div className="px-6 pt-4 pb-6 flex flex-col gap-3">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `text-base font-medium py-2 transition ${
-                isActive ? "text-orange-500" : "text-gray-700 hover:text-orange-500"
-              }`
-            }
-          >
-            Home
-          </NavLink>
-
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              `text-base font-medium py-2 transition ${
-                isActive ? "text-orange-500" : "text-gray-700 hover:text-orange-500"
-              }`
-            }
-          >
-            About
-          </NavLink>
-
-          {/* Mobile Services Accordion */}
-          <div>
-            <button
-              onClick={() => setServicesOpen(!servicesOpen)}
-              className="flex items-center justify-between w-full text-left text-base font-medium text-gray-700 py-2 hover:text-orange-500 transition"
-            >
-              Services{" "}
-              <ChevronDown className={`transition ${servicesOpen ? "rotate-180" : ""}`} size={18} />
-            </button>
-
-            {servicesOpen && (
-              <div className="ml-4 mt-2 flex flex-col gap-2">
-                {serviceLinks.map((item) => (
-                  <NavLink
-                    key={item.name}
-                    to={item.path}
-                    className={({ isActive }) =>
-                      `text-sm transition ${
-                        isActive ? "text-orange-500" : "text-gray-600 hover:text-orange-500"
-                      }`
-                    }
-                  >
-                    {item.name}
-                  </NavLink>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {navLinks.slice(2).map((link) => (
+          {navLinks.map((link) => (
             <NavLink
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
-                `text-base font-medium py-2 transition ${
+                `text-base font-medium py-2 transition-colors duration-300 ${
                   isActive ? "text-orange-500" : "text-gray-700 hover:text-orange-500"
                 }`
               }
