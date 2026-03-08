@@ -2,17 +2,17 @@
   "slides": [
     {
       "id": 1,
-      "src": "../../assets/banner.jpg",
+      "src": "https://i.ibb.co.com/W4TCRMXN/banner.jpg",
       "alt": "Slide 1"
     },
     {
       "id": 2,
-      "src": "../../assets/banner2.jpg",
+      "src": "https://i.ibb.co.com/S79tmVVQ/banner2.jpg",
       "alt": "Slide 2"
     },
     {
       "id": 3,
-      "src": "../../assets/header2.jpg",
+      "src": "https://i.ibb.co.com/Zzz0cNNt/header2.jpg",
       "alt": "Slide 3"
     }
   ]
