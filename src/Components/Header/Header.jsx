@@ -45,7 +45,7 @@ const Header = () => {
         scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="w-full lg:w-10/12 mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8">
+      <div className="w-full lg:w-11/12 mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8">
         <div className="flex items-center justify-between h-20">
 
           {/* Logo */}

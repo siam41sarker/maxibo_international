@@ -1,0 +1,24 @@
+{
+  "features": [
+    {
+      "title": "Advanced Technology",
+      "description": "We provide cutting-edge automation solutions that optimize production efficiency.",
+      "icon": "FiSettings"
+    },
+    {
+      "title": "Industry 4.0 Ready",
+      "description": "Our solutions integrate IoT, big data, and cloud computing for smart manufacturing.",
+      "icon": "FiCpu"
+    },
+    {
+      "title": "Global Partners",
+      "description": "We partner with world-renowned manufacturers from Europe, China, and Turkey.",
+      "icon": "FiAward"
+    },
+    {
+      "title": "Expert Support",
+      "description": "Professional team of skilled technicians providing comprehensive after-sales service.",
+      "icon": "FiUsers"
+    }
+  ]
+}

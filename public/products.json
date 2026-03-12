@@ -4,25 +4,25 @@
       "id": "spreading",
       "name": "Spreading Machines",
       "description": "Automated fabric spreading for precision and efficiency",
-      "image": "spreading-machine.jpg"
+      "image": "https://i.ibb.co.com/6cq3tJY1/imgi-18-imgi-2-spreading-machine-c52k93-DM.jpg"
     },
     {
       "id": "cutting",
       "name": "Cutting Systems",
       "description": "High-precision laser and oscillating knife cutting",
-      "image": "cutting-machine.jpg"
+      "image": "https://i.ibb.co.com/fzd2Sv9h/imgi-4-imgi-3-cutting-machine-BXYa2e-J.jpg"
     },
     {
       "id": "fusing",
       "name": "Fusing Presses",
       "description": "Industrial heat press solutions for garment manufacturing",
-      "image": "fusing-press.jpg"
+      "image": "https://i.ibb.co.com/tMpG3d3L/imgi-20-imgi-4-fusing-press-B9a-Ry-Uh5.jpg"
     },
     {
       "id": "plotter",
       "name": "CAD Plotters",
       "description": "Wide format printing for patterns and markers",
-      "image": "plotter.jpg"
+      "image": "https://i.ibb.co.com/1f8cQHQT/imgi-21-imgi-5-plotter-Bb3mb1-A8.jpg"
     }
   ],
   "productCategories": [
