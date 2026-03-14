@@ -12,10 +12,10 @@ const OurProducts = () => {
   }, []);
 
   return (
-    <div className="bg-[#F1F4F5] pt-7 pb-20">
-      <div className="lg:w-11/12 mx-auto mt-20 flex flex-col gap-5 px-4">
+    <div className="bg-[#F1F4F5] py-20">
+      <div className="lg:w-11/12 mx-auto flex flex-col gap-5 px-4">
 
-        <h2 className="text-3xl md:text-4xl font-bold font-outfit">
+        <h2 className="text-3xl md:text-5xl font-bold font-outfit">
           Our <span className="text-orange-500">Products</span>
         </h2>
 

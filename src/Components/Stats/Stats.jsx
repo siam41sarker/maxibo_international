@@ -83,7 +83,7 @@ const Stats = () => {
 
         {/* heading */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold font-outfit">
+          <h2 className="text-3xl md:text-5xl font-bold font-outfit">
             Why Choose <span className="text-orange-500">Maxibo?</span>
           </h2>
 

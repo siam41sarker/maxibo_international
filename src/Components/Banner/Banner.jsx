@@ -4,102 +4,145 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import { useEffect, useState } from "react";
 
-const Banner = () => {
+const Banner = ({
+  mode = "slider",
+  image = "",
+  title,
+  subtitle,
+  description,
+  buttons = true,
+  size = "large",
+}) => {
   const [slider, setSlider] = useState([]);
   const [company, setCompany] = useState(null);
 
+  // Load slider only for homepage
   useEffect(() => {
-    fetch("/banner.json")
-      .then((res) => res.json())
-      .then((data) => setSlider(data.slides))
-      .catch((err) => console.error("Failed to load slides:", err));
-  }, []);
+    if (mode === "slider") {
+      fetch("/banner.json")
+        .then((res) => res.json())
+        .then((data) => setSlider(data.slides));
+    }
+  }, [mode]);
 
+  // Load company data
   useEffect(() => {
     fetch("/site.json")
       .then((res) => res.json())
-      .then((data) => setCompany(data.company))
-      .catch((err) => console.error("Failed to load company:", err));
+      .then((data) => setCompany(data.company));
   }, []);
 
   if (!company) return null;
 
-  return (
-    <section className="relative w-full h-[90vh] md:h-[95vh] lg:h-screen min-h-[520px] font-inter">
+  // ⭐ Banner heights
+  const heightClass =
+    size === "small"
+      ? "h-[45vh] md:h-[55vh] lg:h-[60vh] min-h-[320px]"
+      : size === "medium"
+      ? "h-[70vh] md:h-[80vh] lg:h-[85vh] min-h-[420px]"
+      : "h-[90vh] md:h-[95vh] lg:h-screen min-h-[520px]";
 
-      <Swiper
-        modules={[Autoplay, EffectFade]}
-        effect="fade"
-        loop
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
-        className="h-full"
+  const defaultTitle = (
+    <>
+      Optimal Solutions for the <br />
+      <span className="text-orange-500">Apparel Industry</span>
+    </>
+  );
+
+  const headingTitle = title || defaultTitle;
+  const headingDesc = description || company.description;
+
+  const Content = (
+    <>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-[#0b2c4d]/85"></div>
+
+      {/* ⭐ TRUE VISUAL CENTER + MOBILE SAFE PADDING */}
+      <div
+        className="
+          relative z-10 h-full flex items-center
+          pt-24 md:pt-28 lg:pt-32
+          lg:w-11/12 mx-auto
+          px-4 sm:px-6 md:px-5 lg:px-6
+        "
       >
-        {slider.map((bg, index) => (
-          <SwiperSlide key={index}>
-            <div
-              className="relative w-full h-full bg-cover bg-center"
-              style={{ backgroundImage: `url(${bg.src})` }}
-            >
+        <div className="max-w-xl md:max-w-2xl lg:max-w-3xl text-white">
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-[#0b2c4d]/80"></div>
-
-              {/* Content */}
-              <div className="relative z-10 w-full xl:w-11/12  mx-auto h-full flex items-center px-6 sm:px-10">
-
-                <div className="max-w-xl md:max-w-2xl lg:max-w-3xl text-white">
-
-                  {/* Tagline */}
-                  <div className="inline-flex items-center gap-2 bg-orange-500/20 backdrop-blur-sm text-orange-400 px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-5 sm:mb-6">
-                    ⚡ {company.tagline}
-                  </div>
-
-                  {/* Title */}
-                  <h1 className="font-outfit font-bold leading-tight mb-5 sm:mb-6
-                    text-2xl
-                    sm:text-3xl
-                    md:text-4xl
-                    lg:text-5xl
-                    xl:text-6xl">
-
-                    Optimal Solutions for the <br />
-                    <span className="text-orange-500">
-                      Apparel Industry
-                    </span>
-                  </h1>
-
-                  {/* Description */}
-                  <p className="text-gray-200 mb-7 sm:mb-8
-                    text-sm
-                    sm:text-base
-                    md:text-lg
-                    lg:text-xl">
-
-                    {company.description}
-                  </p>
-
-                  {/* Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-
-                    <button className="bg-orange-500 hover:bg-orange-600 px-5 sm:px-6 py-2.5 sm:py-3 rounded-md font-semibold transition text-sm sm:text-base">
-                      Explore Solutions →
-                    </button>
-
-                    <button className="border border-gray-300 px-5 sm:px-6 py-2.5 sm:py-3 rounded-md hover:bg-white hover:text-black transition text-sm sm:text-base">
-                      Contact Us
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-
+          {/* Tagline (hidden on About page) */}
+          {subtitle !== null && (
+            <div className="inline-flex items-center gap-2 bg-orange-500/20 backdrop-blur-sm text-orange-400 px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-4">
+              ⚡ {subtitle || company.tagline}
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+          )}
 
+          {/* Title */}
+          <h1
+            className="
+              font-outfit font-bold leading-tight mb-4
+              text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
+            "
+          >
+            {headingTitle}
+          </h1>
+
+          {/* Description */}
+          <p
+            className="
+              text-gray-200 font-inter mb-6
+              text-sm sm:text-base md:text-lg lg:text-xl
+            "
+          >
+            {headingDesc}
+          </p>
+
+          {/* Buttons */}
+          {buttons && (
+            <div className="flex flex-col sm:flex-row gap-3">
+              <button className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md font-semibold transition">
+                Explore Solutions →
+              </button>
+
+              <button className="border border-gray-300 px-6 py-3 rounded-md hover:bg-white hover:text-black transition">
+                Contact Us
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    </>
+  );
+
+  return (
+    <section className={`relative w-full ${heightClass} font-inter`}>
+      {/* 🏠 HOMEPAGE — SLIDER */}
+      {mode === "slider" ? (
+        <Swiper
+          modules={[Autoplay, EffectFade]}
+          effect="fade"
+          loop
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          className="h-full"
+        >
+          {slider.map((bg, index) => (
+            <SwiperSlide key={index}>
+              <div
+                className="relative w-full h-full bg-cover bg-center"
+                style={{ backgroundImage: `url(${bg.src})` }}
+              >
+                {Content}
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : (
+        /* 📄 INNER PAGES — STATIC IMAGE */
+        <div
+          className="relative w-full h-full bg-cover bg-center"
+          style={{ backgroundImage: `url(${image})` }}
+        >
+          {Content}
+        </div>
+      )}
     </section>
   );
 };

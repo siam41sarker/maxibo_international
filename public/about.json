@@ -1,4 +1,11 @@
 {
+  "missionPoints": [
+    "Discover innovative technologies",
+    "Optimize production facilities",
+    "Enable forward-thinking strategies",
+    "Deliver expert consultancy"
+  ],
+
   "values": [
     {
       "icon": "Target",
@@ -21,6 +28,7 @@
       "description": "Building long-term relationships with both our clients and technology partners."
     }
   ],
+
   "timeline": [
     {
       "year": "Founded",
@@ -43,6 +51,7 @@
       "description": "Leading the digital transformation of the apparel industry with smart manufacturing solutions."
     }
   ],
+
   "features": [
     {
       "icon": "Settings",
