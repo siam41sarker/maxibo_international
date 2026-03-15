@@ -5,7 +5,7 @@ import "swiper/css/effect-fade";
 import { useEffect, useState } from "react";
 
 const Banner = ({
-  mode = "slider",
+  mode = "slider", // slider | image | gradient
   image = "",
   title,
   subtitle,
@@ -16,7 +16,7 @@ const Banner = ({
   const [slider, setSlider] = useState([]);
   const [company, setCompany] = useState(null);
 
-  // Load slider only for homepage
+  // Load slider images (homepage)
   useEffect(() => {
     if (mode === "slider") {
       fetch("/banner.json")
@@ -25,7 +25,7 @@ const Banner = ({
     }
   }, [mode]);
 
-  // Load company data
+  // Load company info
   useEffect(() => {
     fetch("/site.json")
       .then((res) => res.json())
@@ -34,7 +34,7 @@ const Banner = ({
 
   if (!company) return null;
 
-  // ⭐ Banner heights
+  // Banner height control
   const heightClass =
     size === "small"
       ? "h-[45vh] md:h-[55vh] lg:h-[60vh] min-h-[320px]"
@@ -55,42 +55,42 @@ const Banner = ({
   const Content = (
     <>
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#0b2c4d]/85"></div>
+      <div className="absolute inset-0 bg-[#0b2c4d]/80"></div>
 
-      {/* ⭐ TRUE VISUAL CENTER + MOBILE SAFE PADDING */}
+      {/* Content */}
       <div
         className="
-          relative z-10 h-full flex items-center
-          pt-24 md:pt-28 lg:pt-32
-          lg:w-11/12 mx-auto
-          px-4 sm:px-6 md:px-5 lg:px-6
-        "
+        relative z-10 h-full flex items-center
+        pt-24 md:pt-28 lg:pt-32
+        lg:w-11/12 mx-auto
+        px-4 sm:px-6 md:px-5 lg:px-6
+      "
       >
         <div className="max-w-xl md:max-w-2xl lg:max-w-3xl text-white">
-
-          {/* Tagline (hidden on About page) */}
+          
+          {/* Subtitle */}
           {subtitle !== null && (
-            <div className="inline-flex items-center gap-2 bg-orange-500/20 backdrop-blur-sm text-orange-400 px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-4">
+            <div className="inline-flex items-center gap-2 bg-orange-500/20 text-orange-400 px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-4">
               ⚡ {subtitle || company.tagline}
             </div>
           )}
 
-          {/* Title */}
+          {/* Title — Outfit Font */}
           <h1
             className="
-              font-outfit font-bold leading-tight mb-4
-              text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
-            "
+            font-outfit font-bold leading-tight mb-4
+            text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
+          "
           >
             {headingTitle}
           </h1>
 
-          {/* Description */}
+          {/* Description — Inter Font */}
           <p
             className="
-              text-gray-200 font-inter mb-6
-              text-sm sm:text-base md:text-lg lg:text-xl
-            "
+            font-inter text-gray-200 mb-6
+            text-sm sm:text-base md:text-lg lg:text-xl
+          "
           >
             {headingDesc}
           </p>
@@ -113,8 +113,8 @@ const Banner = ({
   );
 
   return (
-    <section className={`relative w-full ${heightClass} font-inter`}>
-      {/* 🏠 HOMEPAGE — SLIDER */}
+    <section className={`relative w-full ${heightClass}`}>
+      {/* HOMEPAGE SLIDER */}
       {mode === "slider" ? (
         <Swiper
           modules={[Autoplay, EffectFade]}
@@ -134,8 +134,13 @@ const Banner = ({
             </SwiperSlide>
           ))}
         </Swiper>
+      ) : mode === "gradient" ? (
+        /* GRADIENT BACKGROUND */
+        <div className="relative w-full h-full bg-gradient-to-r from-[#1f4c8f] via-[#2a5fa3] to-[#3568a8]">
+          {Content}
+        </div>
       ) : (
-        /* 📄 INNER PAGES — STATIC IMAGE */
+        /* STATIC IMAGE */
         <div
           className="relative w-full h-full bg-cover bg-center"
           style={{ backgroundImage: `url(${image})` }}

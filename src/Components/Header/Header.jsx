@@ -1,26 +1,19 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "../../assets/logo.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
-  // Close menus when route changes
   useEffect(() => {
-    setOpen(false);
-    setServicesOpen(false);
+    setOpen(false); // Close mobile menu on route change
   }, [location.pathname]);
 
-  // Scroll detection for header style (trigger immediately on scroll)
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0); // triggers immediately when user starts scrolling
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 0);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -50,11 +43,7 @@ const Header = () => {
 
           {/* Logo */}
           <Link to="/" className="flex flex-col items-center shrink-0">
-            <img
-              src={logo}
-              alt="Maxibo International Logo"
-              className="h-10 md:h-16 w-auto"
-            />
+            <img src={logo} alt="Logo" className="h-10 md:h-16 w-auto" />
             <span
               className={`md:text-lg sm:text-sm font-semibold mt-1 text-center transition-colors duration-300 ${
                 scrolled ? "text-black" : "text-white"
@@ -86,23 +75,37 @@ const Header = () => {
 
             {/* Services Dropdown */}
             <div className="relative group">
-              <button
-                className={`flex items-center gap-1 text-sm lg:text-base font-medium transition-colors duration-300 ${
-                  scrolled ? "text-gray-700" : "text-white hover:text-orange-300"
-                }`}
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  `flex items-center gap-1 text-sm lg:text-base font-medium transition-colors duration-300 ${
+                    isActive
+                      ? "text-orange-500"
+                      : scrolled
+                      ? "text-gray-700 hover:text-orange-500"
+                      : "text-white hover:text-orange-300"
+                  }`
+                }
               >
                 Services <ChevronDown size={16} />
-              </button>
+              </NavLink>
 
-              <div className="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              {/* Dropdown */}
+              <div className="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 {serviceLinks.map((item) => (
-                  <Link
+                  <NavLink
                     key={item.name}
                     to={item.path}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500 rounded-md transition"
+                    className={({ isActive }) =>
+                      `block px-4 py-2 text-sm rounded-md transition ${
+                        isActive
+                          ? "text-orange-500 bg-orange-50"
+                          : "text-gray-700 hover:bg-orange-50 hover:text-orange-500"
+                      }`
+                    }
                   >
                     {item.name}
-                  </Link>
+                  </NavLink>
                 ))}
               </div>
             </div>
@@ -166,6 +169,33 @@ const Header = () => {
               {link.name}
             </NavLink>
           ))}
+
+          {/* Mobile Services */}
+          <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              `text-base font-medium py-2 transition-colors duration-300 ${
+                isActive ? "text-orange-500" : "text-gray-700 hover:text-orange-500"
+              }`
+            }
+          >
+            Services
+          </NavLink>
+          <div className="pl-4 flex flex-col gap-1">
+            {serviceLinks.map((item) => (
+              <NavLink
+                key={item.name}
+                to={item.path}
+                className={({ isActive }) =>
+                  `text-sm text-gray-600 hover:text-orange-500 py-1 ${
+                    isActive ? "text-orange-500" : ""
+                  }`
+                }
+              >
+                {item.name}
+              </NavLink>
+            ))}
+          </div>
 
           <Link
             to="/quote"

@@ -1,4 +1,27 @@
 {
+
+  "statistics": [
+    {
+      "icon": "CheckCircle",
+      "value": "500+",
+      "title": "Installations Completed"
+    },
+    {
+      "icon": "Users",
+      "value": "1,000+",
+      "title": "Professionals Trained"
+    },
+    {
+      "icon": "Clock",
+      "value": "24/7",
+      "title": "Support Available"
+    },
+    {
+      "icon": "Smile",
+      "value": "98+",
+      "title": "Client Satisfaction"
+    }
+  ],
   "services": [
     {
       "id": "installation",
