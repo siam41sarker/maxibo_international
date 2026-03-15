@@ -20,9 +20,9 @@ const OurCoreValues = () => {
   }, []);
 
   return (
-    <section className="relative z-20 my-10 sm:my-10 md:my-20  px-4">
+    <section className="relative bg-[#F1F4F5]  py-24 px-4">
 
-      <div className="lg:w-11/12 mx-auto mt-20">
+      <div className="lg:w-11/12 mx-auto">
 
         {/* heading */}
         <div className="text-center mb-14">

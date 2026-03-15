@@ -13,12 +13,12 @@ const CompanyOverview = () => {
   }, []);
 
   return (
-    <section className="bg-[#F1F4F5] py-24 px-4">
+    <section className="bg-white py-24 px-4">
       <div className="lg:w-11/12 mx-auto grid lg:grid-cols-2 gap-12 items-start">
 
         {/* LEFT SIDE */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold font-outfit mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold font-outfit mb-6">
             Company <span className="text-orange-500">Overview</span>
           </h2>
 

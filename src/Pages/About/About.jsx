@@ -1,5 +1,9 @@
+import AboutCTA from "../../Components/AboutCTA/AboutCTA";
 import Banner from "../../Components/Banner/Banner";
 import CompanyOverview from "../../Components/CompanyOverview/CompanyOverview";
+import Leadership from "../../Components/Leadership/Leadership";
+import OurJourney from "../../Components/OurJourney/OurJourney.JSX";
+
 import OurCoreValues from "../../Components/WhyChoose/OurCoreValues";
 const About = () => {
   return (
@@ -22,6 +26,9 @@ const About = () => {
       />
     <CompanyOverview></CompanyOverview>
     <OurCoreValues></OurCoreValues>
+    <OurJourney></OurJourney>
+    <Leadership></Leadership>
+    <AboutCTA></AboutCTA>
     </div>
   );
 };
