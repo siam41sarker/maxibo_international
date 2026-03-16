@@ -54,13 +54,12 @@ const Stats = () => {
   };
 
   return (
-    <section className="relative z-20 -mt-16 sm:-mt-20 md:-mt-24 mb-20 px-4">
+    <section className="relative z-20 mt-10 lg:-mt-16 mb-20 px-4">
 
       {/* STATS CARD */}
       <div className="lg:w-11/12 mx-auto bg-gray-100 rounded-2xl shadow-xl py-12 px-6 md:px-10">
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
-
           {stats.map((item, index) => (
             <div key={index}>
               <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-orange-500 font-outfit">
@@ -73,8 +72,8 @@ const Stats = () => {
               </p>
             </div>
           ))}
-
         </div>
+
       </div>
 
 
@@ -94,7 +93,7 @@ const Stats = () => {
         </div>
 
 
-        {/* cards */}
+        {/* feature cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {features.map((feature, index) => {
@@ -128,6 +127,7 @@ const Stats = () => {
         </div>
 
       </div>
+
     </section>
   );
 };

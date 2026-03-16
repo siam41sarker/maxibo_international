@@ -5,18 +5,20 @@ import "swiper/css/effect-fade";
 import { useEffect, useState } from "react";
 
 const Banner = ({
-  mode = "slider", // slider | image | gradient
+  mode = "slider",
   image = "",
   title,
   subtitle,
   description,
   buttons = true,
-  size = "large",
+  size = "medium",
+  icon: Icon = null,
+  subtitleStyle = "service",
 }) => {
   const [slider, setSlider] = useState([]);
   const [company, setCompany] = useState(null);
 
-  // Load slider images (homepage)
+  /* ---------- Load slider ---------- */
   useEffect(() => {
     if (mode === "slider") {
       fetch("/banner.json")
@@ -25,7 +27,7 @@ const Banner = ({
     }
   }, [mode]);
 
-  // Load company info
+  /* ---------- Load company data ---------- */
   useEffect(() => {
     fetch("/site.json")
       .then((res) => res.json())
@@ -34,14 +36,17 @@ const Banner = ({
 
   if (!company) return null;
 
-  // Banner height control
+  /* =========================================================
+     HEIGHT LOGIC (mobile very large for small devices)
+     ========================================================= */
   const heightClass =
     size === "small"
-      ? "h-[45vh] md:h-[55vh] lg:h-[60vh] min-h-[320px]"
+      ? "h-[70vh] md:h-[55vh] lg:h-[60vh] min-h-[360px]"
       : size === "medium"
-      ? "h-[70vh] md:h-[80vh] lg:h-[85vh] min-h-[420px]"
-      : "h-[90vh] md:h-[95vh] lg:h-screen min-h-[520px]";
+      ? "h-[70vh] md:h-[80vh] lg:h-[85vh] min-h-[520px]"
+      : "h-[130vh] md:h-[95vh] lg:h-screen min-h-[520px]";
 
+  /* ---------- Default content ---------- */
   const defaultTitle = (
     <>
       Optimal Solutions for the <br />
@@ -52,12 +57,14 @@ const Banner = ({
   const headingTitle = title || defaultTitle;
   const headingDesc = description || company.description;
 
+  /* =========================================================
+     CONTENT BLOCK
+     ========================================================= */
   const Content = (
     <>
       {/* Overlay */}
       <div className="absolute inset-0 bg-[#0b2c4d]/80"></div>
 
-      {/* Content */}
       <div
         className="
         relative z-10 h-full flex items-center
@@ -67,31 +74,34 @@ const Banner = ({
       "
       >
         <div className="max-w-xl md:max-w-2xl lg:max-w-3xl text-white">
-          
           {/* Subtitle */}
-          {subtitle !== null && (
-            <div className="inline-flex items-center gap-2 bg-orange-500/20 text-orange-400 px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-4">
-              ⚡ {subtitle || company.tagline}
+          {subtitle !== null &&
+            (subtitleStyle === "pill" ? (
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur text-orange-400 px-5 py-2 rounded-full text-sm font-medium mb-6 font-inter">
+                ⚡ {subtitle || company.tagline}
+              </div>
+            ) : (
+              <p className="text-orange-400 font-semibold mb-6 font-inter">
+                {subtitle || company.tagline}
+              </p>
+            ))}
+
+          {/* Icon */}
+          {Icon && (
+            <div className="mb-6">
+              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-white/10 backdrop-blur">
+                <Icon className="text-orange-500 w-7 h-7" />
+              </div>
             </div>
           )}
 
-          {/* Title — Outfit Font */}
-          <h1
-            className="
-            font-outfit font-bold leading-tight mb-4
-            text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
-          "
-          >
+          {/* Title */}
+          <h1 className="font-outfit font-bold leading-tight mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             {headingTitle}
           </h1>
 
-          {/* Description — Inter Font */}
-          <p
-            className="
-            font-inter text-gray-200 mb-6
-            text-sm sm:text-base md:text-lg lg:text-xl
-          "
-          >
+          {/* Description */}
+          <p className="font-inter text-gray-200 mb-6 text-sm sm:text-base md:text-lg lg:text-xl">
             {headingDesc}
           </p>
 
@@ -112,9 +122,11 @@ const Banner = ({
     </>
   );
 
+  /* =========================================================
+     RENDER
+     ========================================================= */
   return (
     <section className={`relative w-full ${heightClass}`}>
-      {/* HOMEPAGE SLIDER */}
       {mode === "slider" ? (
         <Swiper
           modules={[Autoplay, EffectFade]}
@@ -135,12 +147,10 @@ const Banner = ({
           ))}
         </Swiper>
       ) : mode === "gradient" ? (
-        /* GRADIENT BACKGROUND */
         <div className="relative w-full h-full bg-gradient-to-r from-[#1f4c8f] via-[#2a5fa3] to-[#3568a8]">
           {Content}
         </div>
       ) : (
-        /* STATIC IMAGE */
         <div
           className="relative w-full h-full bg-cover bg-center"
           style={{ backgroundImage: `url(${image})` }}

@@ -1,6 +1,7 @@
-import Banner from "../Banner/Banner";
-import ServiceStats from "../ServiceStats/ServiceStats.jsx";
-import WhyChooseServices from "../WhyChooseServices/WhyChooseServices.jsx";
+import Banner from "../../Components/Banner/Banner.jsx";
+import ImmediateAssistance from "../../Components/ImmediateAssistance/ImmediateAssistance.jsx";
+import ServiceStats from "../../Components/ServiceStats/ServiceStats.jsx";
+import WhyChooseServices from "../../Components/WhyChooseServices/WhyChooseServices.jsx";
 const Services = () => {
   return (
     <div>
@@ -16,8 +17,9 @@ const Services = () => {
         buttons={false}
         size="small"
       />
-    <ServiceStats></ServiceStats>
-    <WhyChooseServices></WhyChooseServices>
+      <ServiceStats></ServiceStats>
+      <WhyChooseServices></WhyChooseServices>
+      <ImmediateAssistance></ImmediateAssistance>
     </div>
   );
 };
