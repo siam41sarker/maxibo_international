@@ -6,6 +6,7 @@ import About from "../Pages/About/About";
 import Services from "../Pages/Services/Services";
 import InstallationSetup from "../Pages/InstallationSetup/InstallationSetup";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import TrainingAndEducation from "../Pages/TrainingAndEducation/TrainingAndEducation";
 const Router = createBrowserRouter(
     [
         {
@@ -27,6 +28,10 @@ const Router = createBrowserRouter(
                 {
                     path:'/services/Installation',
                     element:<InstallationSetup></InstallationSetup>
+                },
+                {
+                    path:'/services/trainingandeducation',
+                    element:<TrainingAndEducation></TrainingAndEducation>
                 },
                 {
                     path:'*',

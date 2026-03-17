@@ -28,7 +28,7 @@ const Header = () => {
 
   const serviceLinks = [
     { name: "Installation & Setup", path: "/services/Installation" },
-    { name: "Consulting Services", path: "/services/consulting" },
+    { name: "Training & Education", path: "/services/trainingandeducation" },
     { name: "Technical Support", path: "/services/support" },
   ];
 
