@@ -29,7 +29,7 @@ const Header = () => {
   const serviceLinks = [
     { name: "Installation & Setup", path: "/services/Installation" },
     { name: "Training & Education", path: "/services/trainingandeducation" },
-    { name: "Technical Support", path: "/services/Consultancy" },
+    { name: "Consultancy", path: "/services/Consultancy" },
   ];
 
   return (

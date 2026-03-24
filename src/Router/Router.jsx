@@ -8,6 +8,9 @@ import InstallationSetup from "../Pages/InstallationSetup/InstallationSetup";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import TrainingAndEducation from "../Pages/TrainingAndEducation/TrainingAndEducation";
 import Consultancy from "../Pages/Consultancy/Consultancy";
+import Partners from "../Pages/Partners/Partners";
+import Products from "../Pages/Products/Products";
+import Contact from "../Pages/Contact/Contact";
 const Router = createBrowserRouter(
     [
         {
@@ -37,6 +40,18 @@ const Router = createBrowserRouter(
                 {
                     path:'/services/consultancy',
                     element:<Consultancy></Consultancy>
+                },
+                {
+                    path:'/partners',
+                    element:<Partners></Partners>
+                },
+                {
+                    path:'/products',
+                    element:<Products></Products>
+                },
+                {
+                    path:'/contact',
+                    element:<Contact></Contact>
                 },
                 {
                     path:'*',

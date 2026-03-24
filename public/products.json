@@ -22,7 +22,7 @@
       "id": "plotter",
       "name": "CAD Plotters",
       "description": "Wide format printing for patterns and markers",
-      "image": "https://i.ibb.co.com/1f8cQHQT/imgi-21-imgi-5-plotter-Bb3mb1-A8.jpg"
+      "image": "https://i.ibb.co.com/bgNF0Pbt/imgi-12-imgi-5-plotter-Bb3mb1-A8.jpg"
     }
   ],
   "productCategories": [
@@ -91,22 +91,30 @@
     {
       "category": "Sewing Machines",
       "description": "Multi-needle chain stitch and overlock machines",
-      "partner": "Huatang"
+      "partners": ["Huatang", "Gemini"]
     },
     {
       "category": "Printing & Dyeing",
       "description": "Oval screen printers and fabric dyeing machines",
-      "partner": "Dopsing"
+      "partners": ["Dopsing", "Gemini"]
     },
     {
       "category": "Fabric Inspection",
       "description": "Plaiting and roll fabric inspection systems",
-      "partner": "Konsan Tech"
+      "partners": ["Konsan Tech", "Gemini"]
     },
     {
       "category": "Automation Solutions",
       "description": "Industry 4.0 ready manufacturing systems",
-      "partner": "Sinajet, GBOS"
+      "partners": ["Sinajet", "GBOS", "Gemini"]
     }
+  ],
+  "productAdvantages": [
+    "World-renowned global manufacturers",
+    "Industry 4.0 ready solutions",
+    "Complete technical support and training",
+    "Spare parts availability",
+    "Expert installation services",
+    "Competitive pricing"
   ]
 }
