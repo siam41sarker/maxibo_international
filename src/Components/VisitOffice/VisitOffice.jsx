@@ -1,9 +1,5 @@
 const VisitOffice = () => {
-  const mapLink =
-    "https://www.google.com/maps?q=House+17+Road+05+Sector+12+Uttara+Dhaka+1230";
-
-  const embedMap =
-    "https://www.google.com/maps?q=House+17+Road+05+Sector+12+Uttara+Dhaka+1230&output=embed";
+  const mapLink = "https://maps.app.goo.gl/TmDiEHWRQQJd1x3d9";
 
   return (
     <section className="bg-[#f5f6f7] py-20 px-6">
@@ -22,9 +18,9 @@ const VisitOffice = () => {
         {/* Map */}
         <div className="relative rounded-xl overflow-hidden border border-gray-200 shadow-md">
 
-          {/* Google Map */}
+          {/* ⚠️ NOTE: iframe can't use short link directly */}
           <iframe
-            src={embedMap}
+            src="https://www.google.com/maps?q=Maxibo+International+Uttara+Dhaka&output=embed"
             className="w-full h-[450px]"
             style={{ border: 0 }}
             loading="lazy"
@@ -32,7 +28,7 @@ const VisitOffice = () => {
             title="Google Map"
           ></iframe>
 
-          {/* Click Overlay (IMPORTANT) */}
+          {/* Click overlay → opens your exact link */}
           <a
             href={mapLink}
             target="_blank"
@@ -49,7 +45,7 @@ const VisitOffice = () => {
             rel="noopener noreferrer"
             className="font-inter text-gray-600 hover:text-orange-500 transition"
           >
-            📍 House # 17 (5th Floor), Road-05, Dhaka 1230
+            📍 House # 17 (5th Floor), Road # 05, Sector # 12, Uttara, Dhaka 1230
           </a>
         </div>
 
