@@ -3,6 +3,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Banner = ({
   mode = "slider",
@@ -108,13 +109,13 @@ const Banner = ({
           {/* Buttons */}
           {buttons && (
             <div className="flex flex-col sm:flex-row gap-3">
-              <button className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md font-semibold transition">
+              <NavLink to="services" className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md font-semibold transition">
                 Explore Solutions →
-              </button>
+              </NavLink>
 
-              <button className="border border-gray-300 px-6 py-3 rounded-md hover:bg-white hover:text-black transition">
+              <NavLink to="/contact" className="border border-gray-300 px-6 py-3 rounded-md hover:bg-white hover:text-black transition">
                 Contact Us
-              </button>
+              </NavLink>
             </div>
           )}
         </div>

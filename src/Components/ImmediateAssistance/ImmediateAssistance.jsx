@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const ImmediateAssistance = () => {
     return (
         <section className="bg-white py-24 px-4">
@@ -20,10 +22,12 @@ const ImmediateAssistance = () => {
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
 
                         {/* Primary Button */}
-                        <button className="bg-orange-500 hover:bg-orange-600 font-inter text-white font-semibold px-8 py-3 rounded-xl transition duration-300 shadow">
+                        <NavLink to="/contact">
+                            <button className="bg-orange-500 hover:bg-orange-600 font-inter text-white font-semibold px-8 py-3 rounded-xl transition duration-300 shadow">
                             Contact Support →
                         </button>
 
+                        </NavLink>
                         {/* Secondary Button */}
                         <a
                             href="tel:+8801680329598"

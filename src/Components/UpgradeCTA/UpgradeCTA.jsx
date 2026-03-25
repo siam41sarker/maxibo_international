@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const UpgradeCTA = () => {
   return (
     <section className="w-full bg-[#F9FAFB] py-24 px-6">
@@ -21,15 +23,18 @@ const UpgradeCTA = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
 
           {/* Primary Button */}
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-inter font-semibold px-8 py-3 rounded-xl transition">
-            Get a Quote →
-          </button>
+          <NavLink to="/contact">
+            <button className="bg-orange-500 border-2 border-orange-500 hover:bg-orange-600 text-white font-inter font-semibold px-8 py-3 rounded-xl transition">
+              Get a Quote →
+            </button>
+          </NavLink>
 
           {/* Secondary Button */}
-          <button className="border-2 border-gray-400 text-gray-700 hover:bg-[#0E2A50] hover:text-white hover:border-[#0E2A50] font-inter font-semibold px-8 py-3 rounded-xl transition">
-            Browse Products
-          </button>
-
+          <NavLink to="products">
+            <button className="border-2 border-gray-400 text-gray-700 hover:bg-[#0E2A50] hover:text-white hover:border-[#0E2A50] font-inter font-semibold px-8 py-3 rounded-xl transition">
+              Browse Products
+            </button>
+          </NavLink>
         </div>
 
       </div>

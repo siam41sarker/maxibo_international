@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const WhyChooseProducts = () => {
   const [advantages, setAdvantages] = useState([]);
@@ -38,9 +39,9 @@ const WhyChooseProducts = () => {
             <p className="text-blue-100 font-inter mb-6">
               Get in touch with our team to discuss your requirements and receive a customized solution for your manufacturing needs.
             </p>
-            <button className="bg-orange-500 hover:bg-orange-600 text-white font-inter font-semibold px-8 py-3 rounded-xl transition duration-300 shadow">
+            <NavLink to="/contact" className="bg-orange-500 hover:bg-orange-600 text-white font-inter font-semibold px-8 py-3 text-center rounded-xl transition duration-300 shadow">
               Get a Custom Quote →
-            </button>
+            </NavLink>
           </div>
 
         </div>

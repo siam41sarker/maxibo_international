@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const OurProducts = () => {
   const [heroProducts, setHeroProducts] = useState([]);
@@ -25,10 +26,10 @@ const OurProducts = () => {
 
         {/* Button aligned to right */}
         <div className="w-full flex justify-end">
-          <button className="group inline-flex items-center gap-2 px-5 py-2 border-2 border-[#103870] text-[#103870] font-inter text-sm font-medium transition-colors duration-300 ease-in-out hover:bg-[#103870] hover:text-white rounded lg:mr-6">
+          <NavLink to="products" className="group inline-flex items-center gap-2 px-5 py-2 border-2 border-[#103870] text-[#103870] font-inter text-sm font-medium transition-colors duration-300 ease-in-out hover:bg-[#103870] hover:text-white rounded lg:mr-6">
             View All Products
             <ArrowRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-          </button>
+          </NavLink>
         </div>
 
         {/* Product Cards */}

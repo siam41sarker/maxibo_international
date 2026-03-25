@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { CheckCircle } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const ProductShowcase = () => {
   const [data, setData] = useState(null);
@@ -84,9 +85,11 @@ const ProductShowcase = () => {
                 </p>
 
                 {/* Button */}
-                <button className="bg-orange-500 text-white px-5 py-2 rounded-full text-xs sm:text-sm hover:opacity-90 transition">
-                  Request a Quote →
-                </button>
+                <NavLink to="/contact">
+                  <button className="bg-orange-500 text-white px-5 py-2 rounded-full text-xs sm:text-sm hover:opacity-90 transition">
+                    Request a Quote →
+                  </button>
+                </NavLink>
               </div>
             </div>
           );

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { NavLink } from "react-router-dom";
 const GlobalPartners = () => {
     const [partners, setPartners] = useState({});
     useEffect(() => {
@@ -25,10 +26,10 @@ const GlobalPartners = () => {
                         </div>)
                     }
                 </div>
-                <button className="flex w-[300px] mt-4 justify-center items-center gap-2 px-4 py-4 border-2 border-[#103870] text-[#103870] font-inter font-bold text-xl text-center  transition-colors duration-300 ease-in-out hover:bg-[#103870] hover:text-white rounded lg:mr-6">
-                    View All Products
+                <NavLink to="/partners" className="flex w-[300px] mt-4 justify-center items-center gap-2 px-4 py-4 border-2 border-[#103870] text-[#103870] font-inter font-bold text-xl text-center  transition-colors duration-300 ease-in-out hover:bg-[#103870] hover:text-white rounded lg:mr-6">
+                    View Our Pertners
                     <ArrowRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-                </button>
+                </NavLink>
             </div>
         </div>
     )

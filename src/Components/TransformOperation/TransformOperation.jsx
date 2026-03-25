@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 const TransformOperation = () => {
     return (
         <section className="w-full bg-[#F9FAFB] py-24 px-6">
@@ -7,7 +9,7 @@ const TransformOperation = () => {
 
                 {/* Title */}
                 <h2 className="font-outfit text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-5">
-                   Ready to{" "}
+                    Ready to{" "}
                     <span className="text-orange-500">Transform </span>Operations
                 </h2>
 
@@ -20,14 +22,18 @@ const TransformOperation = () => {
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
 
                     {/* Primary Button */}
-                    <button className="bg-orange-500 hover:bg-orange-600 text-white font-inter font-semibold px-8 py-3 rounded-xl transition">
-                        Request FreeConsultaion →
-                    </button>
+                    <NavLink to="/contact">
+                        <button className="bg-orange-500 border-2 border-orange-500 hover:bg-orange-600 text-white font-inter font-semibold px-8 py-3 rounded-xl transition">
+                            Request Free Consultaion →
+                        </button>
+                    </NavLink>
 
                     {/* Secondary Button */}
-                    <button className="border-2 border-gray-400 text-gray-700 hover:bg-[#0E2A50] hover:text-white hover:border-[#0E2A50] font-inter font-semibold px-8 py-3 rounded-xl transition">
-                        View All Services
-                    </button>
+                    <NavLink to="/services">
+                        <button className="border-2 border-gray-400 text-gray-700 hover:bg-[#0E2A50] hover:text-white hover:border-[#0E2A50] font-inter font-semibold px-8 py-3 rounded-xl transition">
+                            View All Services
+                        </button>
+                    </NavLink>
 
                 </div>
 

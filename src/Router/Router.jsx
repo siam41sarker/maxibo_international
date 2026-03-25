@@ -11,6 +11,8 @@ import Consultancy from "../Pages/Consultancy/Consultancy";
 import Partners from "../Pages/Partners/Partners";
 import Products from "../Pages/Products/Products";
 import Contact from "../Pages/Contact/Contact";
+import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
+import Terms from "../Pages/Terms/Terms";
 const Router = createBrowserRouter(
     [
         {
@@ -52,6 +54,14 @@ const Router = createBrowserRouter(
                 {
                     path:'/contact',
                     element:<Contact></Contact>
+                },
+                {
+                    path:'/privacy',
+                    element:<PrivacyPolicy></PrivacyPolicy>
+                },
+                {
+                    path:'/terms',
+                    element:<Terms></Terms>
                 },
                 {
                     path:'*',

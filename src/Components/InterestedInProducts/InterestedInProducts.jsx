@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 const InterestedInProducts = () => {
     return (
         <section className="w-full bg-[#F9FAFB] py-24 px-6">
@@ -17,15 +19,17 @@ const InterestedInProducts = () => {
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
 
                     {/* Primary Button */}
-                    <button className="bg-orange-500 hover:bg-orange-600 text-white font-inter font-semibold px-8 py-3 rounded-xl transition">
+                   <NavLink to="/contact">
+                         <button className="bg-orange-500 border-2 border-orange-500 hover:bg-orange-600 text-white font-inter font-semibold px-8 py-3 rounded-xl transition">
                         Request Information →
                     </button>
-
+                   </NavLink>
                     {/* Secondary Button */}
-                    <button className="border-2 border-gray-400 text-gray-700 hover:bg-[#0E2A50] hover:text-white hover:border-[#0E2A50] font-inter font-semibold px-8 py-3 rounded-xl transition">
+                    <NavLink to="/products">
+                        <button className="border-2 border-gray-400 text-gray-700 hover:bg-[#0E2A50] hover:text-white hover:border-[#0E2A50] font-inter font-semibold px-8 py-3 rounded-xl transition">
                         View Products
                     </button>
-
+                    </NavLink>
                 </div>
 
             </div>

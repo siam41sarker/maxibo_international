@@ -54,10 +54,10 @@ const Stats = () => {
   };
 
   return (
-    <section className="relative z-20 mt-10 lg:-mt-16 mb-20 px-4">
+    <section className="relative z-20 mt-10 lg:-mt-4 mb-20 px-4">
 
       {/* STATS CARD */}
-      <div className="lg:w-11/12 mx-auto bg-gray-100 rounded-2xl shadow-xl py-12 px-6 md:px-10">
+      <div className="lg:w-11/12 mx-auto bg-gray-100 rounded-2xl shadow-2xl py-12 px-6 md:px-10">
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
           {stats.map((item, index) => (
@@ -76,7 +76,6 @@ const Stats = () => {
 
       </div>
 
-
       {/* FEATURES SECTION */}
       <div className="lg:w-11/12 mx-auto mt-20">
 
@@ -92,17 +91,15 @@ const Stats = () => {
           </p>
         </div>
 
-
         {/* feature cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
           {features.map((feature, index) => {
             const Icon = iconMap[feature.icon];
 
             return (
               <div
                 key={index}
-                className="group bg-white border border-gray-200 rounded-xl p-8 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-orange-500"
+                className="group bg-white border border-gray-200 rounded-xl p-8 transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:border-orange-500"
               >
 
                 {/* icon */}
@@ -123,11 +120,9 @@ const Stats = () => {
               </div>
             );
           })}
-
         </div>
 
       </div>
-
     </section>
   );
 };

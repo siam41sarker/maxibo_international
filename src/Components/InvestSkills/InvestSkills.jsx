@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const InvestSkills = () => {
     return (
         <section className="bg-white py-24 px-4">
@@ -19,17 +21,18 @@ const InvestSkills = () => {
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
 
                         {/* Primary Button */}
-                        <button className="bg-orange-500 hover:bg-orange-600 font-inter text-white font-semibold px-8 py-3 rounded-xl transition duration-300 shadow">
+                       <NavLink to="/contact">
+                         <button className="bg-orange-500 border-2 border-orange-500 hover:bg-orange-600 font-inter text-white font-semibold px-8 py-3 rounded-xl transition duration-300 shadow">
                             Schedule Training →
                         </button>
+                       </NavLink>
 
                         {/* Secondary Button */}
-                        <a
-                            href="#" target="_blank"
+                        <NavLink to="/services"
                             className="border border-white/40 text-white font-inter font-semibold px-8 py-3 rounded-xl hover:bg-white/10 transition duration-300 inline-block"
                         >
                             View Services
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>

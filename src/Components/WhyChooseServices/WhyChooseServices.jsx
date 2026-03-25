@@ -1,4 +1,5 @@
 import { FiCheckCircle } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
 
 const WhyChooseServices = () => {
   const points = [
@@ -49,9 +50,11 @@ const WhyChooseServices = () => {
               Tell us about your service needs and we'll provide a customized
               proposal within 24 hours.
             </p>
-            <button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 rounded-xl transition duration-300">
-              Get a Quote →
-            </button>
+            <NavLink to="/contact">
+              <button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 rounded-xl transition duration-300">
+                Get a Quote →
+              </button>
+            </NavLink>
           </div>
         </div>
 

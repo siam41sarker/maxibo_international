@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "icon": "Eye",
+    "title": "Information We Collect",
+    "description": "When you contact us for quotations, consultancy, or service inquiries, we may collect your name, email address, phone number, company name, and job title.\nWe collect technical information about your manufacturing equipment and production facilities solely to provide accurate service recommendations and support.\nOur website may automatically collect non-personal data such as browser type, IP address, and pages visited to improve user experience."
+  },
+  {
+    "id": 2,
+    "icon": "FileText",
+    "title": "How We Use Your Information",
+    "description": "To provide and improve our services including installation, training, maintenance, and consultancy for apparel industry equipment.\nTo communicate with you regarding service appointments, product updates, spare parts availability, and technical support.\nTo send you relevant industry updates, new product announcements, and service offerings — only with your consent.\nTo process quotations and service contracts for equipment from our partner manufacturers."
+  },
+  {
+    "id": 3,
+    "icon": "Lock",
+    "title": "Data Protection & Security",
+    "description": "We implement industry-standard security measures to protect your personal and business information from unauthorized access, disclosure, or misuse.\nClient factory data, production specifications, and proprietary manufacturing information shared during consultancy engagements are treated as strictly confidential.\nAccess to your data is restricted to authorized personnel who require it to deliver our services."
+  },
+  {
+    "id": 4,
+    "icon": "Users",
+    "title": "Information Sharing",
+    "description": "We do not sell, trade, or rent your personal information to third parties.\nWe may share necessary technical information with our partner manufacturers (such as Ngai Shing, Hashima, Macpi) solely for the purpose of fulfilling equipment orders, warranty claims, or technical support requests.\nWe may disclose information when required by law or to protect the rights and safety of our company and clients."
+  },
+  {
+    "id": 5,
+    "icon": "FileText",
+    "title": "Your Rights",
+    "description": "You have the right to access, correct, or delete your personal information held by us at any time.\nYou may opt out of marketing communications while still receiving essential service-related updates.\nYou may request a copy of all data we hold about you or your organization."
+  },
+  {
+    "id": 6,
+    "icon": "Mail",
+    "title": "Contact Us",
+    "description": "For any privacy-related inquiries or requests, please contact us at maxibobd@gmail.com or call +880 1712768821.\nWe aim to respond to all privacy-related requests within 5 business days."
+  }
+]

@@ -1,5 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const IndustriesServe = () => {
   const [industries, setIndustries] = useState([]);
@@ -47,12 +48,11 @@ const IndustriesServe = () => {
             <p className="font-inter text-gray-200 leading-relaxed mb-6">
               Speak with our experts to discuss your challenges and explore how we can help transform your manufacturing operations.
             </p>
-            <a
-              href="#"
+            <NavLink to="/contact"
               className="block w-full text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold font-inter px-6 py-3 rounded transition-all duration-300"
             >
               Book Meeting &rarr;
-            </a>
+            </NavLink>
           </div>
         </div>
 

@@ -38,7 +38,7 @@ const Header = () => {
         scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="w-full lg:w-11/12 mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8">
+      <div className="w-full lg:w-11/12 mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-4">
         <div className="flex items-center justify-between h-20">
 
           {/* Logo */}
@@ -131,12 +131,12 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link
-              to="/quote"
+            <NavLink
+              to="/contact"
               className="bg-orange-500 hover:bg-orange-600 text-white text-sm lg:text-base font-semibold px-4 lg:px-5 py-2.5 rounded-lg transition shadow"
             >
               Get a Quote
-            </Link>
+            </NavLink>
           </div>
 
           {/* Mobile Toggle */}
@@ -197,12 +197,12 @@ const Header = () => {
             ))}
           </div>
 
-          <Link
-            to="/quote"
+          <NavLink
+            to="/contact"
             className="mt-3 bg-orange-500 text-white text-center py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
           >
             Get a Quote
-          </Link>
+          </NavLink>
         </div>
       </div>
     </header>

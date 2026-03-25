@@ -1,5 +1,6 @@
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const CompanyOverview = () => {
   const [missionPoints, setMissionPoints] = useState([]);
@@ -35,11 +36,12 @@ const CompanyOverview = () => {
             strive to encourage our clients to adopt forward-thinking
             strategies to achieve their goals.
           </p>
-
-          <button className="flex items-center gap-2 bg-orange-500 text-white px-6 py-3 rounded-md font-inter font-medium hover:bg-orange-600 transition">
-            Contact Our Team
-            <ArrowRight size={18} />
-          </button>
+          <NavLink to="/contact">
+            <button className="flex items-center gap-2 bg-orange-500 text-white px-6 py-3 rounded-md font-inter font-medium hover:bg-orange-600 transition">
+              Contact Our Team
+              <ArrowRight size={18} />
+            </button>
+          </NavLink>
         </div>
 
         {/* RIGHT SIDE */}

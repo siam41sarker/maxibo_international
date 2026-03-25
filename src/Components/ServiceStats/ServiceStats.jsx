@@ -11,7 +11,6 @@ import {
 } from "react-icons/fi";
 import { FaGraduationCap } from "react-icons/fa";
 
-
 // ================= ICON MAPS =================
 
 // Stats icons
@@ -22,14 +21,13 @@ const statIconMap = {
   Smile: FiSmile,
 };
 
-// Service icons (FIXED — valid icons only)
+// Service icons
 const serviceIconMap = {
-  Wrench: FiTool,                // Installation
+  Wrench: FiTool,
   GraduationCap: FaGraduationCap,
   Settings: FiSettings,
   MessageSquare: FiMessageSquare,
 };
-
 
 const ServiceStats = () => {
   const [stats, setStats] = useState([]);
@@ -54,7 +52,7 @@ const ServiceStats = () => {
       });
   }, []);
 
-  // Animated counter
+  // Counter
   const startCounter = (targets) => {
     const duration = 2000;
     const frameRate = 30;
@@ -76,12 +74,12 @@ const ServiceStats = () => {
   };
 
   return (
-    <section className="relative z-30 -mt-10 sm:-mt-12 md:-mt-16 mb-24 px-4">
+    <section className="relative z-30 mt-10 lg:-mt-8 mb-24 px-4">
 
       {/* ================= STATS CARD ================= */}
-      <div className="lg:w-11/12 mx-auto bg-gray-100 rounded-2xl shadow-xl py-12 px-6 md:px-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+      <div className="lg:w-11/12 mx-auto bg-gray-100 rounded-2xl shadow-2xl py-12 px-6 md:px-10">
 
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
           {stats.map((item, index) => {
             const Icon = statIconMap[item.icon];
 
@@ -105,10 +103,9 @@ const ServiceStats = () => {
               </div>
             );
           })}
-
         </div>
-      </div>
 
+      </div>
 
       {/* ================= SUPPORT SOLUTIONS ================= */}
       <div className="lg:w-11/12 mx-auto mt-24">
@@ -125,10 +122,8 @@ const ServiceStats = () => {
           </p>
         </div>
 
-
         {/* Service Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
           {services.map((service) => {
             const Icon = serviceIconMap[service.icon] || FiTool;
 
@@ -142,10 +137,8 @@ const ServiceStats = () => {
                   hover:shadow-2xl hover:border-orange-500
                 "
               >
-
                 {/* Top Row */}
                 <div className="flex items-start justify-between mb-6">
-
                   {/* Icon */}
                   <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-orange-100 text-orange-500">
                     <Icon size={22} />
@@ -163,13 +156,7 @@ const ServiceStats = () => {
                 </div>
 
                 {/* Title */}
-                <h3
-                  className="
-                    text-lg font-semibold font-outfit mb-3
-                    transition-colors duration-300
-                    group-hover:text-orange-500
-                  "
-                >
+                <h3 className="text-lg font-semibold font-outfit mb-3 group-hover:text-orange-500 transition-colors duration-300">
                   {service.title}
                 </h3>
 
@@ -194,8 +181,8 @@ const ServiceStats = () => {
               </a>
             );
           })}
-
         </div>
+
       </div>
 
     </section>

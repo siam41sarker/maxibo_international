@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "icon": "FileText",
+    "title": "Legal Information",
+    "description": "All information provided on our website is for general informational purposes only.\nWe make every effort to ensure accuracy, but we do not guarantee the completeness or reliability of any information.\nUse of any information from this site is strictly at your own risk."
+  },
+  {
+    "id": 2,
+    "icon": "Scale",
+    "title": "Service Terms",
+    "description": "All services including installation, maintenance, training, and consultancy are subject to agreed terms and conditions.\nQuotations provided are valid for a limited time and may change based on market conditions.\nService timelines may vary depending on equipment availability and client requirements."
+  },
+  {
+    "id": 3,
+    "icon": "Shield",
+    "title": "Limitation of Liability",
+    "description": "We are not liable for any direct, indirect, or consequential damages arising from the use of our services or website.\nClients are responsible for ensuring proper usage and maintenance of equipment after installation.\nWe are not responsible for losses caused by improper handling or unauthorized modifications."
+  },
+  {
+    "id": 4,
+    "icon": "Users",
+    "title": "Third-Party Services",
+    "description": "We work with partner manufacturers and suppliers to deliver equipment and services.\nWe are not responsible for the policies, warranties, or actions of third-party companies.\nClients should review the terms and conditions of partner manufacturers separately."
+  },
+  {
+    "id": 5,
+    "icon": "RefreshCcw",
+    "title": "Updates & Changes",
+    "description": "We reserve the right to update or modify these terms at any time without prior notice.\nChanges will be effective immediately upon posting on our website.\nWe encourage users to review this section periodically for updates."
+  },
+  {
+    "id": 6,
+    "icon": "Mail",
+    "title": "Contact Information",
+    "description": "For any questions regarding our terms or legal information, please contact us at maxibobd@gmail.com or call +8801680 329598.\nWe aim to respond to all inquiries within 5 business days."
+  }
+]
