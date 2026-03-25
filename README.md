@@ -1,6 +1,6 @@
 # Maxibo International Website
 
-![Maxibo International Logo](./assets/logo.png)
+![Maxibo International Logo](/src/assets/logo.png)
 
 ## Table of Contents
 
