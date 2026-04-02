@@ -1,10 +1,10 @@
 import { MessageSquare } from "lucide-react";
 import Banner from "../../Components/Banner/Banner";
 import ConcultancyIndex from "../../Components/ConcultancyIndex/ConcultancyIndex";
-import ConsultancyOffering from "../../Components/consultancyOffering/consultancyOffering";
 import OurApproach from "../../Components/OurApproach/OurApproach";
 import IndustriesServe from "../../Components/IndustriesServe/IndustriesServe";
 import TransformOperation from "../../Components/TransformOperation/TransformOperation";
+import ConsultancyOffering from "../../Components/ConsultancyOffering/ConsultancyOffering";
 const Consultancy = () => {
     return (
         <div>
